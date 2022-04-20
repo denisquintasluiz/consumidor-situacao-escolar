@@ -1,0 +1,139 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Helvetica, sans-serif;
+}
+
+body {
+    background-color:#333;
+    color: #FFF;
+}
+
+/*titulo principal*/
+
+body #titulo-principal {
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    padding: 20px 20px;
+    border: 4px solid cornsilk;
+    border-top: none;
+    border-bottom-left-radius: 25%;
+    border-bottom-right-radius:25% ;
+}
+
+/*Dando estilo no formulário*/
+
+form {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    position: relative;
+    margin: 2px auto;
+}
+
+ h3 {
+    margin-top:70px;
+    text-align: center;
+    padding: 30px 30px;
+    
+}
+
+form #btn-codigoescolar {
+    width: 200px;
+    height: 40px;
+    border-radius: 10px;
+    border: none;
+    padding-left: 4px;
+}
+
+form #btn-enviar {
+    height: 40px;
+    width: 90px;
+    margin-left: 5px;
+    border-radius: 10px;
+    color: cornsilk;
+    transition: .5s;
+    color: black;
+}
+
+form #btn-enviar:hover {
+    background-color: transparent;
+    color: cornsilk;
+    border: 2px solid cornsilk;
+    cursor: pointer;
+}
+
+
+/*Class Hide*/
+
+.hiden {
+    display: none;
+}
+
+/*Apresentacao container*/
+
+#apresentacao-container{
+    display: flex;
+    flex-direction: column;
+}
+
+#span-container {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-weight: bold;
+}
+
+#span-container #apelido {
+    margin-left: 60px;
+    margin-right: 60px;
+}
+
+#span-container #turma {
+    margin-right: 60px;
+}
+
+#span-container #polouniversitario{
+    margin-left: 60px;
+    margin-right: 60px;
+}
+
+#span-container #maiornotapauta{
+    margin-left: 60px;
+    margin-right: 60px;
+}
+
+/*Itens-container*/
+#itens-container {
+    margin-top: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    color: crimson;
+}
+
+#itens-container #apelido {
+    margin-left: 60px;
+    margin-right: 60px;
+}
+#itens-container #turma {
+    margin-right: 60px;
+}
+
+#itens-container #polouniversitario{
+    margin-left: 60px;
+    margin-right: 60px;
+}
+
+#itens-container #maiornotapauta{
+    margin-left: 60px;
+    margin-right: 60px;
+}
+
+
+
+
+
+

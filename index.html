@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consumidor Situacao Escolar</title>
+    <link rel="stylesheet" href="./style.css">
+    
+</head>
+<body>
+    <h1 id="titulo-principal">App Consumidor de Situacao Escolar dos Alunos da USTP</h1>
+    <h3>Informe o código escolar do aluno</h3>
+    <form action="#">
+         <input type="number" name="codigoescolar" id="btn-codigoescolar" placeholder="ex:4869">
+         <input type="submit" value="Enviar" id="btn-enviar">
+    </form>
+    <!-- Apresentação de Resultados-->
+   <div class="hiden" >
+       <div id="span-container" >
+         <span id="nome">Nome</span>
+         <span id="apelido">Apelido</span>
+         <span id="turma">Turma</span>
+         <span id="curso">Curso</span>
+         <span id="polouniversitario">PoloUniversitario</span>
+         <span id="numerocadeiraematraso">CadeiraEmAtraso</span>
+         <span id="maiornotapauta">MaiorNotaPauta</span>
+         <span id="menornotapauta">MenorNotaPauta</span>
+       </div>
+       <div id="itens-container">
+         <p id="nome"></p>
+         <p id="apelido"></p>
+         <p id="turma"></p>
+         <p id="curso"></p>
+         <p id="polouniversitario"></p>
+         <p id="numerocadeiraematraso"></p>
+         <p id="maiornotapauta"></p>
+         <p id="menornotapauta"></p>
+       </div>
+       
+    </div>  
+
+
+    <script src="./app.js"></script>
+</body>
+</html>
