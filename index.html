@@ -12,35 +12,50 @@
     <h1 id="titulo-principal">App Consumidor de Situacao Escolar dos Alunos da USTP</h1>
     <h3>Informe o código escolar do aluno</h3>
     <form action="#">
-         <input type="number" name="codigoescolar" id="btn-codigoescolar" placeholder="ex:4869">
+         <input type="number" name="codigoescolar" id="btn-codigoescolar" placeholder="ex:4869" required>
          <input type="submit" value="Enviar" id="btn-enviar">
     </form>
     <!-- Apresentação de Resultados-->
-   <div class="hiden" >
-       <div id="span-container" >
-         <span id="nome">Nome</span>
-         <span id="apelido">Apelido</span>
-         <span id="turma">Turma</span>
-         <span id="curso">Curso</span>
-         <span id="polouniversitario">PoloUniversitario</span>
-         <span id="numerocadeiraematraso">CadeiraEmAtraso</span>
-         <span id="maiornotapauta">MaiorNotaPauta</span>
-         <span id="menornotapauta">MenorNotaPauta</span>
-       </div>
-       <div id="itens-container">
-         <p id="nome"></p>
-         <p id="apelido"></p>
-         <p id="turma"></p>
-         <p id="curso"></p>
-         <p id="polouniversitario"></p>
-         <p id="numerocadeiraematraso"></p>
-         <p id="maiornotapauta"></p>
-         <p id="menornotapauta"></p>
-       </div>
-       
-    </div>  
+    <div class="hiden" >
 
+      <table id="table-container">
+            <tr>
+              <th scope="col">Nome</th>
+              <th scope="col">Apelido</th>
+              <th scope="col">Turma</th>
+              <th scope="col">Curso</th>
+              <th scope="col">PoloUniversitário</th>
+              <th scope="col">CadeiraEmAtraso</th>
+              <th scope="col">MaiorNotaPauta</th>
+              <th scope="col">MenorNotaPauta</th>
+            </tr>
+            <tr>
+              <td id="nome"></td>
+              <td id="apelido"></td>
+              <td id="turma"></td>
+              <td id="curso"></td>
+              <td id="polouniversitario"></td>
+              <td id="numerocadeiraematraso"></td>
+              <td id="maiornotapauta"></td>
+              <td id="menornotapauta"></td>
+            </tr>
+      </table>
 
+      <div id="panilha-container">
+        <button type="submit">Gerar Panilha</button>
+     </div>
+    </div> 
+
+     <footer>
+      <p id="primeiro-footer">Desenvolvido por Denis Quintas Luiz &copy; 2022</p>
+      <p id="segundo-footer">Feito com HTML, CSS e JavaScript puro</p>
+      <div id="footer-links">
+        <a class="footers" href="" target="_blank" type="external" class="links"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+        <a class="footers" href="" target="_blank" type="external" class="links"><i class="fa fa-github" aria-hidden="true"></i></a>
+        <a class="footers" href="" target="_blank" type="external" class="links"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+     </footer>
+
+    <script src="./tableToExcel.js"></script>
     <script src="./app.js"></script>
 </body>
 </html>
