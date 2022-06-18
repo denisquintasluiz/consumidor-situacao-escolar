@@ -20,7 +20,8 @@ btnEnvio.addEventListener("click", async (e) =>{
     if(inputValue != ""){
         
         //configurando a URL
-        let uRL = `https://situacao-escolar-ustp.herokuapp.com/webservice/fiscalizacao/alunos/${inputValue}`;
+        const api_key = "m@lefycoSnnBs9050";
+        let uRL = `https://gestor-situacao-escolar-alunos.herokuapp.com/${api_key}/webservice/fiscalizacao/alunos/${inputValue}`;
 
         //enviando a requisição para o servidor
         let resultado = await fetch(uRL, {mode: "cors"});
@@ -43,10 +44,9 @@ btnEnvio.addEventListener("click", async (e) =>{
                 maiornotapauta: json.result.maiornotapauta,
                 menornotapauta: json.result.menornotapauta
             });
-        }else {
-            alert("O codigo escolar informado não é válido!");
         }
-        
+    }else{
+        alert("Preencha o campo com o código escolar do aluno")
     }
     
 })
@@ -62,8 +62,12 @@ function showInfor(json){
     document.querySelector("#table-container tr #numerocadeiraematraso").innerHTML = `${json.numerocadeiraematraso}`;
     document.querySelector("#table-container tr #maiornotapauta").innerHTML = `${json.maiornotapauta}`;
     document.querySelector("#table-container tr #menornotapauta").innerHTML = `${json.menornotapauta}`;
-
-    document.querySelector(".hiden").classList.remove("hiden");
+      
+    let oculto = document.querySelector(".hiden")
+      if(oculto.getAttribute("class") == "hiden"){
+          oculto.classList.remove("hiden");
+      }
+    
 
 }
 
