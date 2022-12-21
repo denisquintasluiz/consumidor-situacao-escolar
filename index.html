@@ -1,61 +1,70 @@
 <!DOCTYPE html>
 <html lang="pt-pt">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Consumidor Situacao Escolar</title>
-    <link rel="stylesheet" href="./style.css">
-    
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6644963622323805"
+    crossorigin="anonymous">
+    </script>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Consumidor Situacao Escolar</title>
+  <link rel="stylesheet" href="./style.css">
+
 </head>
+
 <body>
-    <h1 id="titulo-principal">App Consumidor de Situacao Escolar dos Alunos da USTP</h1>
-    <h3>Informe o código escolar do aluno</h3>
-    <form action="#">
-         <input type="number" name="codigoescolar" id="btn-codigoescolar" placeholder="ex:4869" required>
-         <input type="submit" value="Enviar" id="btn-enviar">
-    </form>
-    <!-- Apresentação de Resultados-->
-    <div class="hiden" >
+  <h1 id="titulo-principal">App Consumidor de Situacao Escolar dos Alunos da USTP</h1>
+  <h3>Informe o código escolar do aluno</h3>
+  <form action="#">
+    <input type="number" name="codigoescolar" id="btn-codigoescolar" placeholder="ex:4869" required>
+    <input type="submit" value="Enviar" id="btn-enviar">
+  </form>
+  <!-- Apresentação de Resultados-->
+  <div class="hiden">
 
-      <table id="table-container">
-            <tr>
-              <th scope="col">Nome</th>
-              <th scope="col">Apelido</th>
-              <th scope="col">Turma</th>
-              <th scope="col">Curso</th>
-              <th scope="col">PoloUniversitário</th>
-              <th scope="col">CadeiraEmAtraso</th>
-              <th scope="col">MaiorNotaPauta</th>
-              <th scope="col">MenorNotaPauta</th>
-            </tr>
-            <tr>
-              <td id="nome"></td>
-              <td id="apelido"></td>
-              <td id="turma"></td>
-              <td id="curso"></td>
-              <td id="polouniversitario"></td>
-              <td id="numerocadeiraematraso"></td>
-              <td id="maiornotapauta"></td>
-              <td id="menornotapauta"></td>
-            </tr>
-      </table>
+    <table id="table-container">
+      <tr>
+        <th scope="col">Nome</th>
+        <th scope="col">Apelido</th>
+        <th scope="col">Turma</th>
+        <th scope="col">Curso</th>
+        <th scope="col">PoloUniversitário</th>
+        <th scope="col">CadeiraEmAtraso</th>
+        <th scope="col">MaiorNotaPauta</th>
+        <th scope="col">MenorNotaPauta</th>
+      </tr>
+      <tr>
+        <td id="nome"></td>
+        <td id="apelido"></td>
+        <td id="turma"></td>
+        <td id="curso"></td>
+        <td id="polouniversitario"></td>
+        <td id="numerocadeiraematraso"></td>
+        <td id="maiornotapauta"></td>
+        <td id="menornotapauta"></td>
+      </tr>
+    </table>
 
-      <div id="panilha-container">
-        <button type="submit">Gerar Panilha</button>
-     </div>
-    </div> 
+    <div id="panilha-container">
+      <button type="submit">Gerar Panilha</button>
+    </div>
+  </div>
 
-     <footer>
-      <p id="primeiro-footer">Desenvolvido por Denis Quintas Luiz &copy; 2022</p>
-      <p id="segundo-footer">Feito com HTML, CSS e JavaScript puro</p>
-      <div id="footer-links">
-        <a class="footers" href="" target="_blank" type="external" class="links"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-        <a class="footers" href="" target="_blank" type="external" class="links"><i class="fa fa-github" aria-hidden="true"></i></a>
-        <a class="footers" href="" target="_blank" type="external" class="links"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-     </footer>
+  <footer>
+    <p id="primeiro-footer">Desenvolvido por Denis Quintas Luiz &copy; 2022</p>
+    <p id="segundo-footer">Feito com HTML, CSS e JavaScript puro</p>
+    <div id="footer-links">
+      <a class="footers" href="" target="_blank" type="external" class="links"><i class="fa fa-facebook"
+          aria-hidden="true"></i></a>
+      <a class="footers" href="" target="_blank" type="external" class="links"><i class="fa fa-github"
+          aria-hidden="true"></i></a>
+      <a class="footers" href="" target="_blank" type="external" class="links"><i class="fa fa-instagram"
+          aria-hidden="true"></i></a>
+  </footer>
 
-    <script src="./tableToExcel.js"></script>
-    <script src="./app.js"></script>
+  <script src="./tableToExcel.js"></script>
+  <script src="./app.js"></script>
 </body>
+
 </html>
